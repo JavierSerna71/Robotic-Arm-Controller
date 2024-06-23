@@ -1,0 +1,137 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-025 _Randseed
+026-027 pwm
+028-029 KP
+02A-02B KD
+02C-02D LEYDECONTROL
+02E-02F PID_P
+030-031 PID_D
+032-033 PID_I
+034-035 ERROR
+036-037 ERROR1
+038-039 set
+03A-03B POTE
+03C-03F INTEGRAL
+040-043 KI
+044     @TRIS_C
+045     @PSTRINGCN7_9600_62_63.P1
+045-048 @MULFF.P2
+045-048 @FLT.P3
+045-048 @SFTOI.P4
+045-048 @ADDFF.P5
+045-046 @SITOF.P6
+045     @delay_ms1.P7
+045-046 @PRINTF_LU_9600_62_63.P8
+045     PID.@SCRATCH1
+046     PID.@SCRATCH2
+046     @PSTRINGCN7_9600_62_63.@SCRATCH1
+047-048 @MULS1616.P1
+047     @PSTRINGCN7_9600_62_63.@SCRATCH2
+047     @PRINTF_LU_9600_62_63.@SCRATCH1
+048     @PSTRINGCN7_9600_62_63.@SCRATCH3
+048     @PRINTF_LU_9600_62_63.@SCRATCH2
+049-04A @MULS1616.P1
+049-04C @ADDFF.P2
+049-04C @MULFF.P3
+049-04C @FLT.P4
+049     @PSTRINGCN7_9600_62_63.@SCRATCH4
+049     @PRINTF_LU_9600_62_63.@SCRATCH3
+04A     @PRINTF_LU_9600_62_63.@SCRATCH4
+04B     @MULS1616.@SCRATCH1
+04B     @PRINTF_LU_9600_62_63.@SCRATCH5
+04C     @MULS1616.@SCRATCH2
+04C     @PRINTF_LU_9600_62_63.@SCRATCH6
+04D     @MULFF.@SCRATCH1
+04D     @ADDFF.@SCRATCH1
+04D     @FLT.@SCRATCH1
+04D     @PRINTF_LU_9600_62_63.@SCRATCH7
+04E     @MULFF.@SCRATCH2
+04E     @ADDFF.@SCRATCH2
+04E     @FLT.@SCRATCH2
+04F     @MULFF.@SCRATCH3
+04F     @ADDFF.@SCRATCH3
+050     @MULFF.@SCRATCH4
+050     @ADDFF.@SCRATCH4
+051     @MULFF.@SCRATCH5
+051     @ADDFF.@SCRATCH5
+052     @ADDFF.@SCRATCH6
+053     @ADDFF.@SCRATCH7
+054     @ADDFF.@SCRATCH8
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const911.call
+00000F  @delay_ms1
+000025  @MULS1616
+000053  @SITOF
+000078  @FLT
+0000B7  PID
+000112  @MULFF
+000197  @ADDFF
+000308  @SFTOI
+0003E0  @PSTRINGCN7_9600_62_63
+000439  @PRINTF_LU_9600_62_63
+000492  mostrar
+0004C3  MAIN
+0004C3  @cinit1
+0004F7  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\fran-\Desktop\COSAS DE JAVI\FAKIU\7 semestre\datos\
+
+Project Files:
+    ENCODER DEL BRAZO.c                                     [21-nov.-23 01:49  CRC=B4F3A005]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h [28-jun.-16 13:57  CRC=7A426A52]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h [31-jul.-07 15:24  CRC=4E4534F4]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [26-mar.-15 13:34  CRC=C4814297]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [05-sep.-14 12:47  CRC=897CEC6C]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-ene.-08 15:55  CRC=2D1F019F]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [27-mar.-16 19:10  CRC=59769663]
+    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\map_function.c [08-nov.-23 13:16  CRC=0247D4B3]
+
+Source signature=569EAFB6
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=9478
+
+Units:
+    ENCODER DEL BRAZO (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   ENCODER DEL BRAZO.xsym
+    Errors:      ENCODER DEL BRAZO.err
+    Ext Symbols: ENCODER DEL BRAZO.esym
+    INHX8:       ENCODER DEL BRAZO.hex
+    Symbols:     ENCODER DEL BRAZO.sym
+    List:        ENCODER DEL BRAZO.lst
+    Debug/COFF:  ENCODER DEL BRAZO.cof
+    Project:     ENCODER DEL BRAZO.ccspjt
+    Call Tree:   ENCODER DEL BRAZO.tre
+    Statistics:  ENCODER DEL BRAZO.STA

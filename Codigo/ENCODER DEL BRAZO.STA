@@ -1,0 +1,65 @@
+
+ROM used:   1336/8192 (16%)
+            1336/8192 (16%) including unused fragments
+
+            0.5 Average locations per line
+            3.3 Average locations per statement
+
+RAM used:   42/368 (11%) at main() level
+            58/368 (16%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   81    46  11  ENCODER DEL BRAZO.c
+  773     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16f887.h
+   37     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdio.h
+  435     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   32     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+ 1352   359  88  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+   18     2   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\map_function.c
+----- -----
+ 2756   407 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     22   2    1             @delay_ms1
+0     46   3    6             @MULS1616
+ Inline        13             @MULFF
+ Inline        16             @ADDFF
+0    809  61    2   1066  7.2  PID
+0     37   3    2             @SITOF
+ Inline         4             @SFTOI
+0     63   5   10             @FLT
+0     49   4    0     33  1.3  mostrar
+0     11   1    0             @const911
+0     89   7    5             @PSTRINGCN7_9600_62_63
+0     89   7    9             @PRINTF_LU_9600_62_63
+0    117   9    0    214  2.7  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              407
+    Comments                683
+    Volume (V)              1559
+    Difficulty (D)          10.5
+    Effort to implement (E) 16330
+    Time to implement (T)   15 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   7
+    Maintainability (MI)    9
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1332  712  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
